@@ -1,5 +1,6 @@
-import React from 'react';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import React from "react";
+import { MapPin, Phone, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,8 +14,10 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 mt-1 text-blue-400" />
                 <p className="text-gray-400">
-                  T/F-8-B, Swastic Mall<br />
-                  Opp Jain Millian Soc, Sureliya,<br />
+                  T/F-8-B, Swastic Mall
+                  <br />
+                  Opp Jain Millian Soc, Sureliya,
+                  <br />
                   Amraiwadi, Ahmedabad - 380026
                 </p>
               </div>
@@ -24,7 +27,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">Services</h3>
             <ul className="space-y-2 text-gray-400">
@@ -34,18 +37,46 @@ const Footer = () => {
               <li>UI/UX Design</li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>About Us</li>
-              <li>Portfolio</li>
-              <li>Contact</li>
-              <li>Services</li>
+              <li>
+                <Link
+                  to="/about"
+                  className="hover:text-gray-200 transition-colors"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/portfolio"
+                  className="hover:text-gray-200 transition-colors"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contact"
+                  className="hover:text-gray-200 transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/services"
+                  className="hover:text-gray-200 transition-colors"
+                >
+                  Services
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="mt-8 pt-8 border-t border-gray-800">
           <p className="text-center text-gray-400">
             © 2025 Bitcoding Solution. All Rights Reserved.
