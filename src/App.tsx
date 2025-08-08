@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
+import TimeCalcProAppPrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/timecalcpro/privacy-policy" element={<TimeCalcProAppPrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />
